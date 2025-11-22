@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
+import { ParticleBackground } from "@/components/ui/ParticleBackground";
 
 const roles = ["Cloud Engineer", "Azure Expert", "DevOps Enthusiast"];
 
@@ -33,7 +33,7 @@ export default function Hero() {
 
   return (
     <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-20 relative overflow-hidden">
-      <BackgroundBeams />
+      <ParticleBackground />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
