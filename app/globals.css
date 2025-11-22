@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@theme {
+  --color-azure-50: #f0f9ff;
+  --color-azure-100: #e0f2fe;
+  --color-azure-200: #bae6fd;
+  --color-azure-300: #7dd3fc;
+  --color-azure-400: #38bdf8;
+  --color-azure-500: #0ea5e9;
+  --color-azure-600: #0284c7;
+  --color-azure-700: #0369a1;
+  --color-azure-800: #075985;
+  --color-azure-900: #0c4a6e;
+  --color-azure-950: #082f49;
+  --color-azure-neon: #007FFF;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --font-sans: var(--font-inter), sans-serif;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 :root {
   --background: #082f49; /* slate-950 */
   --foreground: #f0f9ff; /* azure-50 */
@@ -16,16 +38,14 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-inter);
+  font-family: var(--font-sans);
   overflow-x: hidden;
 }
 
-@layer utilities {
-  .glass-panel {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
-  }
-  
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-azure-400 to-azure-600;
-  }
+@utility glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+}
+
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-azure-400 to-azure-600;
 }
