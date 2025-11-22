@@ -1,18 +1,23 @@
 {
-  "name": "github_portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "miguel-maestro-portfolio",
+  "version": "2.0.0",
+  "description": "Neural Portfolio - AI-powered professional CV",
+  "author": "Miguel Maestro Martínez",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "azure",
+    "ai",
+    "cv"
+  ],
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.1",
@@ -23,11 +28,14 @@
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.3",
     "framer-motion": "^12.23.24",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.554.0",
     "next": "^16.0.3",
+    "next-themes": "^0.4.4",
     "postcss": "^8.5.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "recharts": "^2.13.3",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"

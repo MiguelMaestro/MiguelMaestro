@@ -33,3 +33,12 @@ ts-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Private files (CVs, personal documents)
+CV*.pdf
+CV*.docx
+CV*.doc
+*.cv.pdf
+resume*.pdf
+curriculum*.pdf
+perfil_laboral.png

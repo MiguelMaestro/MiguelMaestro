@@ -1,0 +1,117 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "blueprints": "Blueprints",
+        "brand": "Maestro.Cloud"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "name": "Miguel Ángel Maestro",
+        "roles": [
+            "Ingeniero Cloud ☁️",
+            "Experto en Azure 🚀",
+            "Entusiasta DevOps 🔧",
+            "Explorador de IA 🤖"
+        ],
+        "tagline": "Transformando infraestructuras cloud en ecosistemas potentes y automatizados.",
+        "experience": "2+ años administrando soluciones Azure escalables 🎯",
+        "cta": {
+            "projects": "Ver Proyectos ✨",
+            "contact": "Contactar 💬"
+        }
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "description": "Administrador de Azure con 2 años de experiencia optimizando infraestructuras cloud. Enfocado en escalabilidad, seguridad y automatización DevOps. ¡Apasionado por la IA y el aprendizaje continuo! 🎓"
+    },
+    "experience": {
+        "title": "Experiencia Profesional",
+        "jobs": [
+            {
+                "role": "Cloud Engineer",
+                "company": "Kyndryl",
+                "period": "Dic 2024 - Presente",
+                "highlights": [
+                    "Diseño y despliegue de arquitecturas cloud enterprise",
+                    "Automatización de procesos con Terraform e IaC",
+                    "Optimización de costos y rendimiento en Azure"
+                ]
+            },
+            {
+                "role": "Azure Platform Engineer",
+                "company": "Naturgy",
+                "period": "Nov 2022 - Abr 2025",
+                "highlights": [
+                    "Gestión de infraestructura Azure para +500 servicios",
+                    "Implementación de pipelines CI/CD con Azure DevOps",
+                    "Migración de workloads on-premise a cloud híbrida"
+                ]
+            },
+            {
+                "role": "Azure Specialist",
+                "company": "Experis",
+                "period": "Abr 2022 - Jun 2022",
+                "highlights": [
+                    "Soporte técnico avanzado en servicios Azure",
+                    "Documentación de best practices y runbooks",
+                    "Capacitación de equipos en tecnologías cloud"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Formación Académica",
+        "degrees": [
+            {
+                "title": "Máster en Inteligencia Artificial Aplicada",
+                "institution": "Universidad Isabel I",
+                "year": "2025",
+                "icon": "🤖"
+            },
+            {
+                "title": "Telecomunicaciones y Sistemas Informáticos",
+                "institution": "IES Pacífico",
+                "year": "2018-2020",
+                "icon": "🎓"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Expertise Técnico",
+        "categories": {
+            "cloud": {
+                "title": "Experto en Azure",
+                "description": "Dominio profundo en servicios Azure, VM scale sets, AKS y Azure Functions. ¡Arquitectando para la nube! ⚡",
+                "icon": "☁️"
+            },
+            "devops": {
+                "title": "DevOps & IaC",
+                "description": "Maestría en Terraform, Bicep, Docker y orquestación con Kubernetes. ¡La automatización es el futuro! 🚀",
+                "icon": "🔧"
+            },
+            "ai": {
+                "title": "Inteligencia Artificial",
+                "description": "Explorando el poder del Machine Learning y modelos generativos para soluciones innovadoras. 🧠",
+                "icon": "🤖"
+            }
+        }
+    },
+    "testimonial": {
+        "quote": "Miguel es un colega excepcional, proactivo y comprometido... Un experto en tecnologías Azure con visión transversal y gran capacidad analítica.",
+        "author": "Jose Manuel Sieira",
+        "rating": "⭐⭐⭐⭐⭐"
+    },
+    "footer": {
+        "rights": "© {year} Miguel Maestro Martínez. Construido con Next.js & Tailwind.",
+        "madeWith": "Hecho con",
+        "and": "y",
+        "heart": "❤️"
+    },
+    "common": {
+        "loading": "Cargando...",
+        "error": "Error",
+        "retry": "Reintentar",
+        "viewMore": "Ver más",
+        "close": "Cerrar"
+    }
+}

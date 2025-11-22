@@ -1,0 +1,117 @@
+{
+    "nav": {
+        "home": "Home",
+        "blueprints": "Blueprints",
+        "brand": "Maestro.Cloud"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "name": "Miguel Ángel Maestro",
+        "roles": [
+            "Cloud Engineer ☁️",
+            "Azure Expert 🚀",
+            "DevOps Enthusiast 🔧",
+            "AI Explorer 🤖"
+        ],
+        "tagline": "Transforming cloud infrastructures into powerful, automated ecosystems.",
+        "experience": "2+ years architecting scalable Azure solutions 🎯",
+        "cta": {
+            "projects": "View Projects ✨",
+            "contact": "Contact Me 💬"
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Azure Administrator with 2 years of experience optimizing cloud infrastructures. Focused on scalability, security, and DevOps automation. Passionate about AI and continuous learning! 🎓"
+    },
+    "experience": {
+        "title": "Professional Experience",
+        "jobs": [
+            {
+                "role": "Cloud Engineer",
+                "company": "Kyndryl",
+                "period": "Dec 2024 - Present",
+                "highlights": [
+                    "Design and deployment of enterprise cloud architectures",
+                    "Process automation with Terraform and IaC",
+                    "Cost and performance optimization in Azure"
+                ]
+            },
+            {
+                "role": "Azure Platform Engineer",
+                "company": "Naturgy",
+                "period": "Nov 2022 - Apr 2025",
+                "highlights": [
+                    "Azure infrastructure management for +500 services",
+                    "CI/CD pipeline implementation with Azure DevOps",
+                    "On-premise to hybrid cloud workload migration"
+                ]
+            },
+            {
+                "role": "Azure Specialist",
+                "company": "Experis",
+                "period": "Apr 2022 - Jun 2022",
+                "highlights": [
+                    "Advanced technical support on Azure services",
+                    "Documentation of best practices and runbooks",
+                    "Team training on cloud technologies"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Academic Background",
+        "degrees": [
+            {
+                "title": "Master's in Applied Artificial Intelligence",
+                "institution": "Universidad Isabel I",
+                "year": "2025",
+                "icon": "🤖"
+            },
+            {
+                "title": "Telecommunications & IT Systems",
+                "institution": "IES Pacífico",
+                "year": "2018-2020",
+                "icon": "🎓"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Technical Expertise",
+        "categories": {
+            "cloud": {
+                "title": "Azure Expert",
+                "description": "Deep expertise in Azure services, VM scale sets, AKS, and Azure Functions. Architecting for the cloud! ⚡",
+                "icon": "☁️"
+            },
+            "devops": {
+                "title": "DevOps & IaC",
+                "description": "Mastery in Terraform, Bicep, Docker, and Kubernetes orchestration. Automation is the future! 🚀",
+                "icon": "🔧"
+            },
+            "ai": {
+                "title": "Artificial Intelligence",
+                "description": "Exploring the power of Machine Learning and generative models for innovative solutions. 🧠",
+                "icon": "🤖"
+            }
+        }
+    },
+    "testimonial": {
+        "quote": "Miguel is an exceptional colleague, proactive and committed... An expert in Azure technologies with transversal vision and great analytical capacity.",
+        "author": "Jose Manuel Sieira",
+        "rating": "⭐⭐⭐⭐⭐"
+    },
+    "footer": {
+        "rights": "© {year} Miguel Maestro Martínez. Built with Next.js & Tailwind.",
+        "madeWith": "Made with",
+        "and": "and",
+        "heart": "❤️"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "retry": "Retry",
+        "viewMore": "View more",
+        "close": "Close"
+    }
+}

@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Cloud, Home, Layers } from "lucide-react";
+import ThemeToggle from "@/components/ui/ThemeToggle";
+import LanguageToggle from "@/components/ui/LanguageToggle";
 
 const navItems = [
   { name: "Home", path: "/", icon: Home },
@@ -19,13 +21,17 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-6 inset-x-0 max-w-2xl mx-auto z-50 px-4"
+      className="fixed top-6 inset-x-0 max-w-4xl mx-auto z-50 px-4"
     >
-      <div className="glass-panel rounded-full px-6 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-bold text-lg text-azure-400">
-          <Cloud className="w-6 h-6 text-azure-500" />
-          <span>Maestro.Cloud</span>
+      <div className="glass-panel rounded-full px-6 py-3 flex items-center justify-between gap-4">
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-bold text-lg text-azure-500 hover:text-azure-600 transition-colors"
+        >
+          <Cloud className="w-6 h-6" />
+          <span className="hidden sm:inline">Maestro.Cloud</span>
         </Link>
+
         <div className="flex items-center gap-1">
           {navItems.map((item) => {
             const isActive = pathname === item.path;
@@ -36,7 +42,9 @@ export default function Navbar() {
                 href={item.path}
                 className={cn(
                   "relative px-4 py-2 rounded-full text-sm font-medium transition-colors",
-                  isActive ? "text-white" : "text-azure-200 hover:text-white"
+                  isActive
+                    ? "text-white dark:text-white"
+                    : "text-azure-700 dark:text-azure-200 hover:text-azure-900 dark:hover:text-white"
                 )}
               >
                 {isActive && (
@@ -53,6 +61,11 @@ export default function Navbar() {
               </Link>
             );
           })}
+        </div>
+
+        <div className="flex items-center gap-2">
+          <LanguageToggle />
+          <ThemeToggle />
         </div>
       </div>
     </motion.nav>

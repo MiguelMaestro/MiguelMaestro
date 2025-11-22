@@ -1,0 +1,95 @@
+MIGUEL ÁNGEL MAESTRO MARTÍNEZ   
+Madrid - 627076280 - miguelmaestromartinez@gmail.com   
+  www.linkedin.com/in/miguelmaestromartinez /   
+     
+Me puedo definir como alguien organizativo, comunicativo y proactivo acostumbrado a un alto nivel de exigencia 
+por las labores que he tenido que desempeñar en cada uno de mis empleos anteriores. Tengo buenas dotes para 
+la formación telemática y la comunicación. No tengo miedo a los retos.  Siempre aprendiendo  
+   
+ Linux – Windows - Microsoft AZURE - Gestión  incidencias - Kubernetes  KS8 -    
+Terraform - PowerShell - Rem edy - GIT - Azure  DevOps  – Azure ML – Azure OpenAI  
+    
+   
+EXPERIENCIA PROFESIONAL  
+   
+Azure Administrator & DevOps | Naturgy | Kyndryl - Experis        noviembre 2022  
+  
+Azure Administrator  
+- Gestión de recursos de Azure.  
+- Implementación y gestión de soluciones de almacenamiento en Azure.  
+- Configuración y gestión de redes virtuales en Azure.  
+- Monitorización y solución de problemas de servicios de Azure.  
+- Implementación y gestión de soluciones de gobernanza y cumplimiento.  
+- Evaluación y dimensionamiento de máquinas virtuales.  
+- Automatización de tareas con Azure Resource Manager.  
+- Administración de suscripciones y recursos de Azure.  
+ 
+Azure DevOps y Terraform  
+- Diseño e implementación de pipelines de CI/CD con Azure DevOps.  
+- Gestión de repositorios con Azure Repos.  
+- Implementación de infraestructura como código (IaC) con Terraform.  
+- Automatización y gestión de configuraciones con Terraform.  
+- Monitorización de aplicaciones con Azure Monitor y Azure Application Insights.  
+- Despliegue de contenedores con Azure Kubernetes Se rvice (AKS).  
+- Colaboración y coordinación de equipos interfuncionales para la entrega continua de software.  
+ 
+Azure Machine Learning & Servicios Cognitivos  
+- Implementación de soluciones de Machine Learning con Azure ML Service.  
+- Creación de soluciones personalizadas utilizando servicios cognitivos como OpenAI.  
+- Despliegue y monitorización de modelos de Machine Learning en producción con Azure ML y Azure 
+Monitor.  
+- Experiencia en la creación de chatbots y asistentes virtuales con Azure Bot Servic e y servicios cognitivos.  
+- Conocimiento profundo de las mejores prácticas de seguridad y cumplimiento en la implementación de 
+soluciones de IA en Azure   
+DevOps Consultant & Multicloud Management, Experis para Kyndryl -Naturgy                  abril  2022 – octubre 2022   
+   
+- Remedy 9: Resolución de incidencias cloud y ejecución de tareas catalogadas y no catalogadas  
+- Control de versiones con GIT   
+- Aptitudes: Oracle Cloud Infraestruture · Metodologías ágiles · Amazon Web Services (AWS) · Portal   
+Azure   
+   
+Técnico de aplicaciones, Experis para Kyndryl -Naturgy, Madrid  marzo 2021  -  marzo 2022  
+   
+- Modificación de BBDD, SQLplus y escenarios ODI   
+- Remedy: Resolución de incidencias técnicas nivel 2 de software y ejecución de tareas catalogadas y no    
+catalogadas   
+- Monitorización en Tivoli, BlueCare y OVO   
+- Microsoft Azure: revisión de rendimiento, reinicio de instancias y máquinas. Azure CLI para   despliegues.   
+- Oracle Weblogic, Enterprise Manager y WebSphere: control de servidores, clúster e instancias.            
+Resolución de incidencias. Ejecución de despliegues.   
+- Administración de Sistemas Operativos en entorno Windows y Linux.   
+- Planificación  y ejecución de Pases a Integración y Pases de Producción con impacto directo a Negocio.   
+- Planificación y ejecución de parcheados WINTEL y UNIX.   
+- Resolución de incidencias N2 en aplicaciones y sus sistemas previo análisis de log.   
+- Análisis de rendimient o en SAP y transportes de integración a negocio.   
+- Análisis de conectividad entre aplicaciones Microsoft, MQ y SAP .   
+   
+   
+   
+FORMACIÓN ACADÉMICA   
+  
+FCP Desarrollo de Instalaciones Comunes de Telecomunicaciones en el Entorno de Edificios - Madrid   2019   
+   
+   
+   
+FORMACIÓN COMPLEMENTARIA   
+   
+   
+Azure Fundamentals con Experis – Manpower Academy                                                                                  marzo 2022   
+   
+Certificado BIG DATA Analytics con AWS y Microsoft Azure                                                                               enero 2021   
+   
+FCP Desarrollo de Instalaciones Comunes de Telecomunicaciones en el Entorno de Edificios - Madrid   2019   
+   
+AWS technical Essentials – Experis Academy                                                                                                                   2022   
+   Kubernetes KS8 – Experis Academy                                                                                                                                   2022    
+Contenerización usando Docker - Experis Academy                                                                                                       2022   
+   
+Automatización con Ansible - Experis Academy                                                                                                             2 022   
+   
+Red Hat OpenShift - Experis Academy                                                                                                                              2022    
+Using Terraform to Manage Applications and Infrastructure – A Cloud Guru                                                         2022   
+   
+   
+   
+   
