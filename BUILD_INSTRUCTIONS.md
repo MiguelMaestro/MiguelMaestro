@@ -13,21 +13,25 @@ El build desde WSL tiene conflictos con npm de Windows. Hay 3 opciones:
 1. **Abrir PowerShell como Administrador**
 
 2. **Navegar al proyecto:**
+
 ```powershell
 cd \\wsl.localhost\Ubuntu\home\miguelmaestro\VibeCoding\github_portfolio
 ```
 
 3. **Ejecutar build:**
+
 ```powershell
 npm run build
 ```
 
 4. **Verificar output:**
+
 ```powershell
 ls out
 ```
 
 5. **Commit y push:**
+
 ```powershell
 git add .
 git commit -m "feat: performance + SEO + a11y improvements v2.0"
@@ -41,6 +45,7 @@ git push origin main
 1. Abrir el proyecto en VS Code (Windows)
 2. Usar la terminal integrada
 3. Ejecutar:
+
 ```bash
 npm run build
 git add .
@@ -96,6 +101,7 @@ Route (app)                              Size     First Load JS
 ```
 
 ### Archivos generados:
+
 - `out/` - Carpeta con sitio estático
 - `out/index.html` - Página principal
 - `out/_next/` - Assets optimizados
@@ -139,27 +145,35 @@ Una vez deployado, verificar:
 ### Validaciones Online:
 
 **Performance:**
+
 ```
 https://pagespeed.web.dev/?url=https://miguelmaestro.github.io/
 ```
+
 Objetivo: Performance 95+, SEO 100
 
 **Structured Data:**
+
 ```
 https://search.google.com/test/rich-results?url=https://miguelmaestro.github.io/
 ```
+
 Objetivo: Person schema detectado ✅
 
 **Accessibility:**
+
 ```
 https://wave.webaim.org/report#/https://miguelmaestro.github.io/
 ```
+
 Objetivo: 0 errores críticos
 
 **Social Media Preview:**
+
 ```
 https://developers.facebook.com/tools/debug/?q=https://miguelmaestro.github.io/
 ```
+
 Objetivo: OG image de 1200x630 visible
 
 ---
@@ -167,12 +181,14 @@ Objetivo: OG image de 1200x630 visible
 ## 🎯 RESUMEN DE CAMBIOS
 
 ### Archivos Modificados (4):
+
 - `app/layout.tsx` - Meta tags + structured data
 - `app/page.tsx` - Lazy loading
 - `app/globals.css` - Accessibility
 - `components/Hero.tsx` - ARIA labels
 
 ### Archivos Nuevos (11):
+
 - `public/favicon.ico` ✅
 - `public/og-image.png` ✅
 - `public/icon-192.png` ✅
@@ -182,9 +198,10 @@ Objetivo: OG image de 1200x630 visible
 - `public/manifest.json` ✅
 - `components/SkipLink.tsx` ✅
 - `components/EnhancedFooter.tsx` ✅
-- + 6 documentos .md de referencia ✅
+- - 6 documentos .md de referencia ✅
 
 ### Métricas Esperadas:
+
 - **Score:** 76/100 → 92/100 (+21%)
 - **Performance:** +35%
 - **SEO:** +54% (100/100)
@@ -219,6 +236,7 @@ git push origin main
 ## 📞 SOPORTE
 
 Si encuentras problemas, consulta:
+
 - `DEPLOYMENT_CHECKLIST.md` - Checklist completo
 - `IMPLEMENTATION_GUIDE.md` - Guía técnica detallada
 - `AUDIT_REPORT.md` - Análisis completo

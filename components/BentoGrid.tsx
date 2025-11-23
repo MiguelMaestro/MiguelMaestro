@@ -90,6 +90,33 @@ export default function BentoGrid() {
       bg: "bg-gradient-to-br from-purple-500/10 to-pink-500/10",
     },
     {
+      title: "🏅 Certificaciones",
+      description: (
+        <div className="space-y-2 text-xs">
+          {t.education.certifications?.map((cert, idx) => (
+            <div
+              key={idx}
+              className="flex items-start gap-2 p-2 rounded-lg bg-gradient-to-r from-azure-500/10 to-accent/10 border border-azure-500/20"
+            >
+              <span className="text-azure-500 text-lg">✓</span>
+              <div>
+                <p className="font-bold text-azure-600 dark:text-azure-300">
+                  {cert.name}
+                </p>
+                <p className="text-azure-700/70 dark:text-azure-100/70">
+                  {cert.issuer} • {cert.year}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      ),
+      icon: Brain,
+      className: "md:col-span-2",
+      color: "text-emerald-600 dark:text-emerald-400",
+      bg: "bg-gradient-to-br from-emerald-500/10 to-teal-500/10",
+    },
+    {
       title: t.skills.categories.cloud.title,
       description: t.skills.categories.cloud.description,
       icon: Cloud,

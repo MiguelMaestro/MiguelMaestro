@@ -22,31 +22,55 @@ export default function AISkillsRadar() {
       skill: "Azure Cloud",
       level: 95,
       fullMark: 100,
-    },
-    {
-      skill: "DevOps",
-      level: 90,
-      fullMark: 100,
+      category: "cloud" as const,
     },
     {
       skill: "Terraform/IaC",
+      level: 90,
+      fullMark: 100,
+      category: "devops" as const,
+    },
+    {
+      skill: "PowerShell",
       level: 88,
       fullMark: 100,
+      category: "programming" as const,
+    },
+    {
+      skill: "CI/CD Pipelines",
+      level: 85,
+      fullMark: 100,
+      category: "devops" as const,
     },
     {
       skill: "Kubernetes",
-      level: 85,
-      fullMark: 100,
-    },
-    {
-      skill: "AI/ML",
       level: 75,
       fullMark: 100,
+      category: "devops" as const,
     },
     {
-      skill: "Security",
-      level: 82,
+      skill: "SQL Server",
+      level: 80,
       fullMark: 100,
+      category: "programming" as const,
+    },
+    {
+      skill: "Azure AI/ML",
+      level: 70,
+      fullMark: 100,
+      category: "ai" as const,
+    },
+    {
+      skill: "Problem Solving",
+      level: 92,
+      fullMark: 100,
+      category: "soft" as const,
+    },
+    {
+      skill: "Team Leadership",
+      level: 85,
+      fullMark: 100,
+      category: "soft" as const,
     },
   ];
 

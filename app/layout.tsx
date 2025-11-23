@@ -18,25 +18,29 @@ const siteUrl = "https://miguelmaestro.github.io";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Miguel Maestro | Cloud Engineer & Azure Expert",
+    default: "Miguel Maestro | Senior Cloud Engineer - Azure & DevOps Expert",
     template: "%s | Miguel Maestro",
   },
   description:
-    "Portfolio profesional de Miguel Maestro Martínez - Cloud Engineer con +2 años de experiencia en Azure, DevOps, Terraform y soluciones cloud enterprise. Experto en infraestructura escalable y automatización.",
+    "Portfolio profesional de Miguel Maestro, especialista en Azure Cloud, Terraform, CI/CD y automatización DevOps. 2+ años optimizando infraestructuras enterprise con +500 servicios en producción.",
   keywords: [
-    "Azure Cloud Engineer",
-    "DevOps Engineer",
+    "Azure",
+    "Cloud Engineer",
+    "DevOps",
     "Terraform",
-    "Infrastructure as Code",
+    "IaC",
     "Kubernetes",
-    "Azure DevOps",
-    "Cloud Architecture",
     "CI/CD",
+    "Azure DevOps",
+    "PowerShell",
+    "Infrastructure as Code",
     "Miguel Maestro",
-    "Portfolio",
-    "AI/ML",
-    "Microsoft Azure",
-    "Cloud Migration",
+    "Cloud Architecture",
+    "Azure Administrator",
+    "AZ-104",
+    "AZ-305",
+    "Kyndryl",
+    "Naturgy",
   ],
   authors: [
     {
@@ -56,24 +60,24 @@ export const metadata: Metadata = {
     locale: "es_ES",
     alternateLocale: ["en_US"],
     url: siteUrl,
-    siteName: "Miguel Maestro Portfolio",
-    title: "Miguel Maestro | Cloud Engineer & Azure Expert",
+    siteName: "Maestro.Cloud",
+    title: "Miguel Maestro | Senior Cloud Engineer",
     description:
-      "Portfolio profesional - Cloud Engineer especializado en Azure, DevOps y arquitecturas cloud enterprise",
+      "Transformando infraestructuras cloud en ecosistemas escalables. Azure Expert | DevOps | IaC | AI Enthusiast",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Miguel Maestro - Cloud Engineer & Azure Expert",
+        alt: "Miguel Maestro - Cloud Engineer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Miguel Maestro | Cloud Engineer & Azure Expert",
+    title: "Miguel Maestro | Senior Cloud Engineer",
     description:
-      "Cloud Engineer especializado en Azure, DevOps y arquitecturas cloud enterprise",
+      "Azure Expert | DevOps | IaC | AI Enthusiast. Transformando infraestructuras en ecosistemas escalables.",
     images: ["/og-image.png"],
     creator: "@miguelmaestro",
   },
@@ -110,8 +114,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Miguel Ángel Maestro Martínez",
-    jobTitle: "Cloud Engineer & Azure Specialist",
+    jobTitle: "Senior Cloud Infrastructure Engineer",
     url: siteUrl,
+    image: `${siteUrl}/og-image.png`,
     sameAs: [
       "https://www.linkedin.com/in/miguelmaestromartinez",
       "https://github.com/MiguelMaestro",
@@ -119,11 +124,47 @@ export default function RootLayout({
     worksFor: {
       "@type": "Organization",
       name: "Kyndryl",
+      url: "https://www.kyndryl.com",
     },
-    alumniOf: {
-      "@type": "EducationalOrganization",
-      name: "Universidad Isabel I",
-    },
+    alumniOf: [
+      {
+        "@type": "EducationalOrganization",
+        name: "Universidad Isabel I",
+      },
+      {
+        "@type": "EducationalOrganization",
+        name: "IES Pacífico",
+      },
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certificate",
+        name: "Microsoft Azure Administrator (AZ-104)",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "Microsoft",
+        },
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certificate",
+        name: "Azure Solutions Architect Expert (AZ-305)",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "Microsoft",
+        },
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certificate",
+        name: "HashiCorp Terraform Associate",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "HashiCorp",
+        },
+      },
+    ],
     knowsAbout: [
       "Microsoft Azure",
       "DevOps",
@@ -133,10 +174,15 @@ export default function RootLayout({
       "Cloud Architecture",
       "Azure DevOps",
       "CI/CD Pipelines",
+      "PowerShell",
       "Artificial Intelligence",
+      "Machine Learning",
+      "Cost Optimization",
+      "Security",
+      "RBAC",
     ],
     description:
-      "Cloud Engineer con más de 2 años de experiencia optimizando infraestructuras cloud en Azure. Especializado en escalabilidad, seguridad y automatización DevOps.",
+      "Senior Cloud Engineer con 2+ años especializándome en Azure, IaC (Terraform), DevOps y automatización. He gestionado infraestructuras con +500 servicios, optimizado costos cloud y liderado migraciones híbridas complejas.",
   };
 
   return (

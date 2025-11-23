@@ -2,59 +2,14 @@
 
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, FileText } from "lucide-react";
 import { useTilt3D } from "@/lib/gsap-hooks";
-
-interface Project {
-  title: string;
-  description: string;
-  tags: string[];
-  link?: string;
-  github?: string;
-  icon: string;
-}
+import { Project } from "@/lib/types";
+import Image from "next/image";
 
 export default function ProjectsShowcase() {
-  const { locale } = useI18n();
-
-  const projects: Project[] = [
-    {
-      title: "Azure Cloud Architect",
-      description:
-        locale === "es"
-          ? "Diseño e implementación de infraestructura cloud enterprise con +500 servicios en producción. Reducción del 35% en costos operacionales."
-          : "Enterprise cloud infrastructure design and implementation with +500 services in production. 35% reduction in operational costs.",
-      tags: ["Azure", "Terraform", "DevOps", "Cost Optimization"],
-      icon: "☁️",
-    },
-    {
-      title: "CI/CD Pipeline Automation",
-      description:
-        locale === "es"
-          ? "Automatización completa de pipelines con Azure DevOps. Deploy time reducido de 4h a 15min. Integración con testing automatizado."
-          : "Complete pipeline automation with Azure DevOps. Deploy time reduced from 4h to 15min. Integration with automated testing.",
-      tags: ["Azure DevOps", "YAML", "Docker", "Kubernetes"],
-      icon: "🚀",
-    },
-    {
-      title: "Hybrid Cloud Migration",
-      description:
-        locale === "es"
-          ? "Migración de workloads on-premise a arquitectura híbrida. Zero downtime durante la transición. Mejora del 60% en disponibilidad."
-          : "On-premise to hybrid cloud workload migration. Zero downtime during transition. 60% improvement in availability.",
-      tags: ["Azure Arc", "VPN", "ExpressRoute", "Backup"],
-      icon: "🔄",
-    },
-    {
-      title: "AI-Powered Monitoring",
-      description:
-        locale === "es"
-          ? "Sistema de monitorización inteligente con Azure Monitor y Log Analytics. Detección predictiva de incidencias con ML."
-          : "Intelligent monitoring system with Azure Monitor and Log Analytics. Predictive incident detection with ML.",
-      tags: ["Azure Monitor", "KQL", "AI/ML", "Alerts"],
-      icon: "🤖",
-    },
-  ];
+  const { t } = useI18n();
+  const projects = t.projects.list as Project[];
 
   return (
     <section className="max-w-6xl mx-auto px-4 py-20" id="projects">
@@ -65,14 +20,13 @@ export default function ProjectsShowcase() {
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-azure-900 dark:text-white">
-          {locale === "es" ? "Proyectos Destacados" : "Featured Projects"}
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-azure-500 to-accent bg-clip-text text-transparent">
+          {t.projects.title}
         </h2>
-        <p className="text-azure-700 dark:text-azure-200 max-w-2xl mx-auto">
-          {locale === "es"
-            ? "Soluciones cloud que transforman negocios"
-            : "Cloud solutions that transform businesses"}
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          {t.projects.subtitle}
         </p>
+        <div className="w-24 h-1 bg-gradient-to-r from-azure-500 to-accent mx-auto mt-4 rounded-full" />
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -94,66 +48,104 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1, duration: 0.6 }}
       viewport={{ once: true }}
-      className="group relative glass-panel rounded-2xl p-6 hover:border-azure-500/50 dark:hover:border-azure-neon/50 transition-all duration-300"
+      whileHover={{ scale: 1.02 }}
+      className="group relative rounded-2xl overflow-hidden backdrop-blur-md bg-white/10 dark:bg-black/20 border border-white/20 shadow-xl hover:shadow-2xl hover:shadow-azure-500/20 transition-all duration-300"
       style={{ transformStyle: "preserve-3d" }}
     >
-      {/* Glow effect on hover */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-azure-500/0 to-purple-500/0 group-hover:from-azure-500/10 group-hover:to-purple-500/10 transition-all duration-500 -z-10" />
+      {/* Thumbnail Image */}
+      {project.thumbnail && (
+        <div className="relative w-full h-48 bg-gradient-to-br from-azure-500/20 to-accent/20 overflow-hidden">
+          <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-30">
+            💻
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        </div>
+      )}
 
-      {/* Icon */}
-      <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
-        {project.icon}
-      </div>
+      {/* Content */}
+      <div className="p-6">
+        {/* Title */}
+        <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-azure-500 transition-colors">
+          {project.title}
+        </h3>
 
-      {/* Title */}
-      <h3 className="text-xl font-bold mb-3 text-azure-900 dark:text-white group-hover:text-azure-600 dark:group-hover:text-azure-300 transition-colors">
-        {project.title}
-      </h3>
+        {/* Description */}
+        <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+          {project.description}
+        </p>
 
-      {/* Description */}
-      <p className="text-sm text-azure-700/80 dark:text-azure-200/70 mb-4 leading-relaxed">
-        {project.description}
-      </p>
+        {/* Stack Tags */}
+        <div className="mb-4">
+          <h4 className="text-xs font-semibold text-foreground/60 mb-2">
+            STACK
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {project.stack.map((tech, techIdx) => (
+              <span
+                key={techIdx}
+                className="px-3 py-1 rounded-full text-xs font-medium bg-azure-500/20 text-azure-500 border border-azure-500/30 hover:bg-azure-500/30 transition-colors"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
 
-      {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.tags.map((tag, tagIdx) => (
-          <span
-            key={tagIdx}
-            className="px-3 py-1 rounded-full text-xs font-medium bg-azure-100/50 dark:bg-azure-900/30 text-azure-700 dark:text-azure-300 border border-azure-300/30 dark:border-azure-500/30"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
+        {/* Challenges */}
+        <div className="mb-4">
+          <h4 className="text-xs font-semibold text-foreground/60 mb-2">
+            DESAFÍOS
+          </h4>
+          <ul className="space-y-1">
+            {project.challenges.slice(0, 2).map((challenge, chIdx) => (
+              <li
+                key={chIdx}
+                className="flex items-start gap-2 text-xs text-muted-foreground"
+              >
+                <span className="text-accent mt-0.5">▸</span>
+                <span>{challenge}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      {/* Links */}
-      {(project.link || project.github) && (
-        <div className="flex gap-3 pt-3 border-t border-azure-200/30 dark:border-white/10">
-          {project.link && (
+        {/* Links */}
+        <div className="flex gap-3 pt-3 border-t border-white/10">
+          {project.links.github && (
             <a
-              href={project.link}
+              href={project.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-azure-600 dark:text-azure-400 hover:text-azure-700 dark:hover:text-azure-300 transition-colors"
-            >
-              <ExternalLink className="w-4 h-4" />
-              <span>Demo</span>
-            </a>
-          )}
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-azure-600 dark:text-azure-400 hover:text-azure-700 dark:hover:text-azure-300 transition-colors"
+              className="flex items-center gap-2 text-sm text-azure-500 hover:text-accent transition-colors"
             >
               <Github className="w-4 h-4" />
               <span>Code</span>
             </a>
           )}
+          {project.links.demo && (
+            <a
+              href={project.links.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-azure-500 hover:text-accent transition-colors"
+            >
+              <ExternalLink className="w-4 h-4" />
+              <span>Demo</span>
+            </a>
+          )}
+          {project.links.docs && (
+            <a
+              href={project.links.docs}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-azure-500 hover:text-accent transition-colors"
+            >
+              <FileText className="w-4 h-4" />
+              <span>Docs</span>
+            </a>
+          )}
         </div>
-      )}
+      </div>
     </motion.div>
   );
 }

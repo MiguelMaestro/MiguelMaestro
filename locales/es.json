@@ -22,7 +22,21 @@
     },
     "about": {
         "title": "Sobre Mí",
-        "description": "Administrador de Azure con 2 años de experiencia optimizando infraestructuras cloud. Enfocado en escalabilidad, seguridad y automatización DevOps. ¡Apasionado por la IA y el aprendizaje continuo! 🎓"
+        "subtitle": "Transformando infraestructuras en ecosistemas escalables",
+        "bio": "Senior Cloud Engineer con 2+ años especializándome en Azure, IaC (Terraform), DevOps y automatización. He gestionado infraestructuras con +500 servicios, optimizado costos cloud y liderado migraciones híbridas complejas. Apasionado por la IA y las soluciones innovadoras.",
+        "values": [
+            "Automatización inteligente",
+            "Arquitecturas escalables",
+            "Optimización continua",
+            "Innovación con IA"
+        ],
+        "achievements": [
+            "Gestión de +500 servicios Azure en producción",
+            "Reducción de costos cloud del 30% mediante optimización",
+            "Migración exitosa de workloads on-premise a híbrido",
+            "Implementación de CI/CD para 50+ proyectos"
+        ],
+        "cta": "Descargar CV"
     },
     "experience": {
         "title": "Experiencia Profesional",
@@ -31,28 +45,55 @@
                 "role": "Cloud Engineer",
                 "company": "Kyndryl",
                 "period": "Dic 2024 - Presente",
+                "logo": "K",
+                "description": "Diseño y despliegue de arquitecturas cloud enterprise escalables",
+                "technologies": [
+                    "Azure",
+                    "Terraform",
+                    "Kubernetes",
+                    "CI/CD",
+                    "IaC"
+                ],
                 "highlights": [
-                    "Diseño y despliegue de arquitecturas cloud enterprise",
-                    "Automatización de procesos con Terraform e IaC",
-                    "Optimización de costos y rendimiento en Azure"
+                    "Arquitectura de soluciones multi-tenant para clientes enterprise",
+                    "Automatización completa con Terraform y Azure DevOps",
+                    "Optimización de costos con Azure Cost Management"
                 ]
             },
             {
                 "role": "Azure Platform Engineer",
                 "company": "Naturgy",
                 "period": "Nov 2022 - Abr 2025",
+                "logo": "N",
+                "description": "Gestión integral de infraestructura Azure para servicios críticos",
+                "technologies": [
+                    "Azure",
+                    "PowerShell",
+                    "Logic Apps",
+                    "SAP",
+                    "SQL Server"
+                ],
                 "highlights": [
-                    "Gestión de infraestructura Azure para +500 servicios",
+                    "Administración de +500 servicios Azure en producción",
                     "Implementación de pipelines CI/CD con Azure DevOps",
-                    "Migración de workloads on-premise a cloud híbrida"
+                    "Migración de workloads on-premise a cloud híbrida",
+                    "Gestión de identidades y RBAC con Azure AD"
                 ]
             },
             {
                 "role": "Azure Specialist",
                 "company": "Experis",
                 "period": "Abr 2022 - Jun 2022",
+                "logo": "E",
+                "description": "Soporte técnico avanzado y capacitación en Azure",
+                "technologies": [
+                    "Azure",
+                    "Networking",
+                    "Security",
+                    "Support"
+                ],
                 "highlights": [
-                    "Soporte técnico avanzado en servicios Azure",
+                    "Soporte técnico L2/L3 en servicios Azure",
                     "Documentación de best practices y runbooks",
                     "Capacitación de equipos en tecnologías cloud"
                 ]
@@ -69,10 +110,33 @@
                 "icon": "🤖"
             },
             {
-                "title": "Telecomunicaciones y Sistemas Informáticos",
+                "title": "Técnico Superior en Telecomunicaciones",
                 "institution": "IES Pacífico",
                 "year": "2018-2020",
                 "icon": "🎓"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "Microsoft Azure Administrator (AZ-104)",
+                "issuer": "Microsoft",
+                "year": "2023",
+                "badge": "azure",
+                "verifyUrl": "#"
+            },
+            {
+                "name": "HashiCorp Terraform Associate",
+                "issuer": "HashiCorp",
+                "year": "2024",
+                "badge": "terraform",
+                "verifyUrl": "#"
+            },
+            {
+                "name": "Azure Solutions Architect Expert (AZ-305)",
+                "issuer": "Microsoft",
+                "year": "2024",
+                "badge": "azure",
+                "verifyUrl": "#"
             }
         ]
     },
@@ -96,10 +160,93 @@
             }
         }
     },
-    "testimonial": {
-        "quote": "Miguel es un colega excepcional, proactivo y comprometido... Un experto en tecnologías Azure con visión transversal y gran capacidad analítica.",
-        "author": "Jose Manuel Sieira",
-        "rating": "⭐⭐⭐⭐⭐"
+    "projects": {
+        "title": "Proyectos Destacados",
+        "subtitle": "Soluciones cloud innovadoras y arquitecturas escalables",
+        "list": [
+            {
+                "title": "Azure Multi-Subscription Orchestration",
+                "description": "Sistema de orquestación para gestión automatizada de múltiples suscripciones Azure con Terraform",
+                "stack": [
+                    "Terraform",
+                    "Azure",
+                    "PowerShell",
+                    "CI/CD"
+                ],
+                "challenges": [
+                    "Gestión de state remoto distribuido",
+                    "RBAC y governance multi-tenant",
+                    "Cost optimization automation"
+                ],
+                "links": {
+                    "github": "https://github.com/MiguelMaestro",
+                    "demo": "https://github.com/MiguelMaestro",
+                    "docs": "https://github.com/MiguelMaestro"
+                },
+                "thumbnail": "/projects/azure-orchestration.png"
+            },
+            {
+                "title": "Infrastructure as Code Templates",
+                "description": "Biblioteca de templates Terraform y Bicep para despliegues rápidos de arquitecturas comunes",
+                "stack": [
+                    "Terraform",
+                    "Bicep",
+                    "Azure",
+                    "GitHub Actions"
+                ],
+                "challenges": [
+                    "Modularización y reusabilidad",
+                    "Validación automática de seguridad",
+                    "CI/CD pipeline integration"
+                ],
+                "links": {
+                    "github": "https://github.com/MiguelMaestro"
+                },
+                "thumbnail": "/projects/iac-templates.png"
+            },
+            {
+                "title": "AI-Powered Cloud Cost Optimizer",
+                "description": "Herramienta con ML para predecir y optimizar costos cloud en tiempo real",
+                "stack": [
+                    "Python",
+                    "Azure ML",
+                    "Power BI",
+                    "Azure Functions"
+                ],
+                "challenges": [
+                    "Modelo predictivo de consumo",
+                    "Integración con Azure Cost Management API",
+                    "Real-time recommendations"
+                ],
+                "links": {
+                    "github": "https://github.com/MiguelMaestro",
+                    "demo": "https://github.com/MiguelMaestro"
+                },
+                "thumbnail": "/projects/cost-optimizer.png"
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Testimonios",
+        "subtitle": "Lo que dicen mis colegas",
+        "list": [
+            {
+                "name": "Jose Manuel Sieira",
+                "role": "Senior Cloud Architect",
+                "company": "Naturgy",
+                "photo": "/testimonials/jose.jpg",
+                "text": "Miguel es un colega excepcional, proactivo y comprometido. Un experto en tecnologías Azure con visión transversal y gran capacidad analítica.",
+                "rating": 5
+            },
+            {
+                "name": "[Colega]",
+                "role": "DevOps Lead",
+                "company": "Kyndryl",
+                "photo": "/testimonials/placeholder.jpg",
+                "text": "La capacidad de Miguel para resolver problemas complejos de infraestructura es impresionante. Siempre encuentra soluciones elegantes y escalables.",
+                "rating": 5
+            }
+        ]
     },
     "footer": {
         "rights": "© {year} Miguel Maestro Martínez. Construido con Next.js & Tailwind.",
