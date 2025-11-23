@@ -133,12 +133,12 @@ export default function BentoGrid() {
       bg: "bg-gradient-to-br from-emerald-500/10 to-teal-500/10",
     },
     {
-      title: `💬 ${t.testimonial.author}`,
+      title: `💬 ${t.testimonials.title}`,
       description: (
         <blockquote className="italic text-xs border-l-4 border-azure-500/50 dark:border-azure-neon/50 pl-4 bg-gradient-to-r from-azure-500/5 dark:from-azure-neon/5 to-transparent py-2 rounded-r-lg">
-          "{t.testimonial.quote}" {t.testimonial.rating}
+          "{t.testimonials.list[0].text}" ⭐⭐⭐⭐⭐
           <footer className="not-italic font-bold mt-1 text-azure-600 dark:text-azure-neon">
-            — {t.testimonial.author}
+            — {t.testimonials.list[0].name}, {t.testimonials.list[0].role} @ {t.testimonials.list[0].company}
           </footer>
         </blockquote>
       ),
