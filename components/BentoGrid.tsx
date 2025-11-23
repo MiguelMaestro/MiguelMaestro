@@ -25,7 +25,7 @@ export default function BentoGrid() {
   const items = [
     {
       title: `👋 ${t.about.title}`,
-      description: t.about.description,
+      description: t.about.subtitle,
       icon: User,
       className: "md:col-span-2 md:row-span-1",
       color: "text-azure-500 dark:text-azure-neon",
